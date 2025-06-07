@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Classifier</title>
+    <style>
+    
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 5px 15px rgb(0, 0, 0);
+            
+        }
+        h1 {
+            text-align: center;
+        }
+        input[type="file"] {
+            display: block;
+            margin: 40px auto;
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+        }
+        button {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 15px;
+            transition: background 0.3s;
+        }
+        #preview {
+            margin-top: 20px;
+            border-radius: 10px;
+            border: 3px solid white;
+        }
+        
+        #result {
+            font-size: 18px;
+            margin-top: 15px;
+            font-weight: bold;
+            color: white;
+        }
+        #infoBlock {
+            font-family: 'Arial', sans-serif;
+            margin-top: 20px;
+            padding: 10px;
+            color: white;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Upload an Image for Classification</h1>
+        <input type="file" id="imageUpload" accept="image/*">
+        <button onclick="uploadImage()">Predict</button>
+        <p id="result"></p>
+        <img id="preview" style="display:none; width:200px;">
+    
+
+        <div id="infoBlock" style="display:none; margin-top: 20px; padding: 10px; border: 1px solid #ccc; border-radius: 10px;">
+            <h3>About this Animal:</h3>
+            <p id="animalInfo"></p>
+        </div>
+    </div>
+
+
+    <script src="static/script.js"></script>
+
+</body>
+</html>
