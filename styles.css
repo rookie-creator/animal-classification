@@ -1,0 +1,82 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+/* Header */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* File Input */
+input[type="file"] {
+    display: none;
+    
+}
+
+label {
+    display: inline-block;
+    background: #ff9800;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+label:hover {
+    background: #e68900;
+}
+
+/* Predict Button */
+button {
+    background: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+/* Image Preview */
+#preview {
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 3px solid white;
+}
+
+/* Result Text */
+#result {
+    font-size: 18px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
